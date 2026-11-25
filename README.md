@@ -13,7 +13,6 @@
 npx monaco-json-studio-double
 npx monaco-json-studio-double file-picker status
 npx monaco-json-studio-double select stats
-npx monaco-json-studio-double actions cursor
 ```
 
 ## Programmatic (`npm`)
