@@ -1,6 +1,6 @@
 # monaco-json-studio-double
 
-Dedicated 2-pane side-by-side static Monaco JSON Studio generator built on `monaco-json-studio-base`.
+Dedicated 2-pane static Monaco JSON Studio generator (`v2`) directly composing [`monaco-json-studio-base-header`](https://www.npmjs.com/package/monaco-json-studio-base-header), [`monaco-json-studio-base-body`](https://www.npmjs.com/package/monaco-json-studio-base-body) (`double`), and [`monaco-json-studio-base-footer`](https://www.npmjs.com/package/monaco-json-studio-base-footer).
 
 - **npm**: [https://www.npmjs.com/package/monaco-json-studio-double](https://www.npmjs.com/package/monaco-json-studio-double)
 - **Suite Story & Docs**: [https://keshavsoft.github.io/monaco-json-studio-docs/double.html](https://keshavsoft.github.io/monaco-json-studio-docs/double.html)
