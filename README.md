@@ -1,27 +1,29 @@
 # monaco-json-studio-double
 
-Dedicated 2-pane static Monaco JSON Studio generator (`v2`) directly composing [`monaco-json-studio-base-header`](https://www.npmjs.com/package/monaco-json-studio-base-header), [`monaco-json-studio-base-body`](https://www.npmjs.com/package/monaco-json-studio-base-body) (`double`), and [`monaco-json-studio-base-footer`](https://www.npmjs.com/package/monaco-json-studio-base-footer).
+2-pane static Monaco JSON Studio generator composing base-header, base-body (double), and base-footer.
 
 - **npm**: [https://www.npmjs.com/package/monaco-json-studio-double](https://www.npmjs.com/package/monaco-json-studio-double)
-- **Suite Story & Docs**: [https://keshavsoft.github.io/monaco-json-studio-docs/double.html](https://keshavsoft.github.io/monaco-json-studio-docs/double.html)
-- **Repo Docs**: [./docs/index.html](./docs/index.html) | [https://keshavsoft.github.io/monaco-json-studio-double/](https://keshavsoft.github.io/monaco-json-studio-double/)
+- **GitHub**: [https://github.com/keshavsoft/monaco-json-studio-double](https://github.com/keshavsoft/monaco-json-studio-double)
+- **Docs**: [https://keshavsoft.github.io/monaco-json-studio-double/](https://keshavsoft.github.io/monaco-json-studio-double/) ([Story](./docs/story.html) · [npx](./docs/npx-usage.html) · [npm](./docs/npm-usage.html) · [Dependencies](./docs/dependencies.html))
+- **Suite**: [Studio Docs](https://keshavsoft.github.io/monaco-json-studio-docs/double.html)
 
-## Why It Exists
-
-Side-by-side comparison or input/output workflows need two independent panes, each with its own header controls (`file-picker`, `select`, `title`, `none`) and footer (`cursor`, `note`, `none`). Isolating the 2-pane layout into its own package keeps the CLI direct and outputs to non-overwriting folders.
-
-## CLI Usage
+## CLI (`npx`)
 
 ```bash
 npx monaco-json-studio-double
-npx monaco-json-studio-double file-picker:cursor select:note
-npx monaco-json-studio-double title:none
+npx monaco-json-studio-double file-picker status
+npx monaco-json-studio-double select stats
+npx monaco-json-studio-double actions cursor
 ```
 
-## Programmatic Usage
+## Programmatic (`npm`)
+
+```bash
+npm install monaco-json-studio-double
+```
 
 ```js
 import { createDoubleStudio } from 'monaco-json-studio-double';
 
-createDoubleStudio({ pane1: 'file-picker:cursor', pane2: 'select:note' });
+createDoubleStudio({ header: 'file-picker', footer: 'status' });
 ```
